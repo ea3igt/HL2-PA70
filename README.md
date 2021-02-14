@@ -3,7 +3,7 @@
 
 This is a work in progress to create a 70W power amplifier to be used together with the Hermes-Lite 2.x using the commercial DIY Kit 70W SSB linear HF Power Amplifier, a Low Pass Filter, and an Arduino board, to control it all.
 
-The amplifier is based on an "70W SSB Linear HF Power Amplifier" you can find on eBay, Banggood, AliExpress, etc. This is the circuit:
+The amplifier is based on an "70W SSB Linear HF Power Amplifier" you can find on eBay, Banggood, AliExpress, etc. This is the schematic:
 
 ![70W SSB Linear HF Power Amplifier](https://github.com/ea3igt/HL2-PA70/blob/main/70W%20SSB%20Amplifier%20circuit.png?raw=true)
 
