@@ -15,4 +15,4 @@ This 70W SSB linear HF Power Amplifier needs a Low Pass Filter (LPF) to be compl
 
 I wanted to use this Power Amplifier for my Hermes Lite 2 (HL2) and I wanted a fully automatic operation, so I decided to use an Arduino Nano to control it all, reading the I2C bus from the HL2 to select the band, and using the EXTTR signal to activate the amplifier. This is the complete block diagram of the aemplifier:
 
-![PA70 Block Diagram](https://github.com/ea3igt/HL2-PA70/blob/main/PA70%20Block%20Diagram%20v2.1.JPG?raw=true)
+![PA70 Block Diagram](https://github.com/ea3igt/HL2-PA70/blob/main/PA70%20Block%20Diagram%20v2.1.1.JPG?raw=true)
