@@ -32,4 +32,4 @@ This is the complete block diagram of the amplifier:
 
 And this is the schematic of the first version of the Control Board:
 
-![PA70 Control Board Schematic](https://github.com/ea3igt/HL2-PA70/blob/main/Control Board v2.1.1.JPG?raw=true)
+![PA70 Control Board Schematic](https://github.com/ea3igt/HL2-PA70/blob/main/Control%20Board%20v2.1.1.JPG?raw=true)
