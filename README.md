@@ -18,8 +18,9 @@ I wanted to use this Power Amplifier for my Hermes Lite 2 (HL2) and I wanted a f
 
 1. Reading the I2C bus from the HL2 to automatically select the band on the LPF
 2. Using the EXTTR signal to activate the amplifier (PPT)
-3. Control the fan speed using a PWM controlled fan
-4. Display Power Amplifier basic information using an OLED mini-screen
+3. Sensing the temperatura of the tgransistor using an NTC
+3. Drive the speed of the fan using Pulse-width modulation (PWM) depending on the transistor temperature
+4. And display Power Amplifier basic information using an OLED mini-screen
 
 This is the complete block diagram of the amplifier:
 
