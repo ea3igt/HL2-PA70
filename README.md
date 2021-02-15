@@ -8,7 +8,11 @@ The amplifier is based on an "70W SSB Linear HF Power Amplifier" you can find on
 
 ![70W SSB Linear HF Power Amplifier](https://github.com/ea3igt/HL2-PA70/blob/main/70W%20SSB%20Amplifier%20circuit.png?raw=true)
 
-I changed the two included IRF640 Single Mosfets, for one MRF9120 (Double RF Power Mosfet) that fits perfectly in the PCB and is more reliable because the heat transference is more convenient due to the form factor (the PCB accept both formats, the TO-220 package for the IRF640 ant the NI-860 package for the MRF-9120)
+I did some modifications on the original board to adapt to the new transistor:
+
+1. I changed the two included IRF640 Single Mosfets, for one MRF9120 (Double RF Power Mosfet) that fits perfectly in the PCB and is more reliable because the heat transference is more convenient due to the form factor (the PCB accept both formats, the TO-220 package for the IRF640 ant the NI-860 package for the MRF-9120)
+2. I changed the R7 from 2K to 100 Ohm to get the proper Bias level (~4.2 volt)
+3. I added the R6 (15 Ohm) for better input SWR adaptation (modification suggested by OE1CGS)
 
 ![MRF9120 Package](https://github.com/ea3igt/HL2-PA70/blob/main/MRF9120.JPG?raw=true)
 
