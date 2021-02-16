@@ -32,7 +32,7 @@ This is the complete block diagram of the amplifier I designed:
 
 ## First Tests and Control Board Prototype (V1.0)
 
-Based on the information published by Alex Pressl in [Easyeda](https://easyeda.com/pressl.alex/experiment_HL2_Arduino_I2C) and inspired by his work, I began to work on my first prototype of the Control Board to test the I2C connection from my HL2 to the initial "Control Board" listening the I2C messages that HL2 uses to communicate from the main board to the internal LPF filter (N2ADR). 
+Based on the information published by Alex Pressl in [Easyeda](https://easyeda.com/pressl.alex/experiment_HL2_Arduino_I2C) and inspired by his work, I began to work on my first prototype of the Control Board to test the I2C connection from my HL2 to the initial "Control Board" listening to the I2C messages that HL2 uses to communicate from the main board to the internal LPF filter (N2ADR). 
 
 ![PA70 Control Board](https://github.com/ea3igt/HL2-PA70/blob/main/First%20Prototype%20v1.0.2.jpg?raw=true)
 
