@@ -40,7 +40,10 @@ During this first prototype, I also tested the Temperature Sensor (a common ther
 
 ## PA70 First Version (V2.0)
 
-And this is the schematic of the first version of the Control Board:
+This is the schematic of the first version of the Control Board:
 
 ![PA70 Control Board Schematic](https://github.com/ea3igt/HL2-PA70/blob/main/Control%20Board%20v2.1.1.JPG?raw=true)
 
+An this is the first fully functional version of the Power Amplifier with the LPF and the Control Board:
+
+![PA70 Control Board Schematic](https://github.com/ea3igt/HL2-PA70/blob/main/HL2-PA70%20v2.1.0.JPG?raw=true)
