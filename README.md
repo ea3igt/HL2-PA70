@@ -6,7 +6,7 @@ This is a work in progress to create a 70W power amplifier to be used together w
 
 The amplifier is based on an "70W SSB Linear HF Power Amplifier" you can find on eBay, Banggood, AliExpress, etc. This is the schematic:
 
-![70W SSB Linear HF Power Amplifier](https://github.com/ea3igt/HL2-PA70/blob/main/70W%20SSB%20Amplifier%20circuit.png?raw=true)
+![70W SSB Linear HF Power Amplifier](https://github.com/ea3igt/HL2-PA70/images/blob/main/70W%20SSB%20Amplifier%20circuit.png?raw=true)
 
 
 I did some modifications on the original board to adapt it to the new transistor and to my requirements:
