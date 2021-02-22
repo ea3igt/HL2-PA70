@@ -44,7 +44,7 @@ This is the schematic of the first version of the Control Board:
 
 ![PA70 Control Board Schematic](https://github.com/ea3igt/HL2-PA70/blob/main/Images/Control%20Board%20v2.1.2.JPG?raw=true)
 
-An this is the first fully functional version of the Power Amplifier with the LPF and the Control Board:
+And this is the first fully functional version of the Power Amplifier with the LPF and the Control Board:
 
 ![PA70 Inside View](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v2.1.0.JPG?raw=true)
 
