@@ -56,7 +56,11 @@ Based on the experience accumulated during first prototype tests and the first u
 
 ![PA70 Control Board Schematic v3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/Control%20Board%20Schematic%20v3.0.1.JPG?raw=true)
 
-And this is the final Control Board with all the components and the Arduino Nano:
+This is the final Control Board with all the components and the Arduino Nano:
 
 ![PA70 Control Board Schematic v3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/Control%20Board%20v3.0.1.jpg?raw=true)
+
+And this is the final Power Amplifier complemented with the LPF and the Control Board:
+
+![PA70 Control Board Schematic v3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v3.0.0.JPG?raw=true)
 
