@@ -48,8 +48,6 @@ And this is the first fully functional version of the Power Amplifier with the L
 
 ![PA70 Inside View V2.1](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v2.1.0.JPG?raw=true)
 
-![PA70 Frontal View V2.1](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20Enclosure%20v2.1.0.jpg?raw=true)
-
 ## PA70 First Finished Version (V3.0)
 
 Based on the experience accumulated during first prototype tests and the first usable Control Board, I designed my self PCB. This is the final schematic I implemented for the Control Board:
@@ -64,3 +62,4 @@ And this is the final Power Amplifier complemented with the LPF and the Control 
 
 ![PA70 iNSIDE vIEW v3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v3.0.0.JPG?raw=true)
 
+![PA70 Frontal View V2.1](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20Enclosure%20v2.1.0.jpg?raw=true)
