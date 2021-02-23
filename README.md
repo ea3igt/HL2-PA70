@@ -46,9 +46,9 @@ This is the schematic of the first version of the Control Board:
 
 And this is the first fully functional version of the Power Amplifier with the LPF and the Control Board:
 
-![PA70 Inside View](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v2.1.0.JPG?raw=true)
+![PA70 Inside View V2.1](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v2.1.0.JPG?raw=true)
 
-![PA70 Frontal View](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20Enclosure%20v2.1.0.jpg?raw=true)
+![PA70 Frontal View V2.1](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20Enclosure%20v2.1.0.jpg?raw=true)
 
 ## PA70 First Finished Version (V3.0)
 
@@ -62,5 +62,5 @@ This is the final Control Board with all the components and the Arduino Nano:
 
 And this is the final Power Amplifier complemented with the LPF and the Control Board:
 
-![PA70 Control Board Schematic v3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v3.0.0.JPG?raw=true)
+![PA70 iNSIDE vIEW v3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v3.0.0.JPG?raw=true)
 
