@@ -22,7 +22,7 @@ I wanted to use this Power Amplifier for my Hermes Lite 2 (HL2) and I wanted a f
 1. Reading the I2C bus from the HL2 to decode the band
 2. Selecting the appropiate filter band on the LPF board
 3. Using the EXTTR signal to activate the amplifier (PPT)
-4. Sensing the temperatura of the tgransistor using an NTC
+4. Sensing the temperature of the transistor using an NTC
 5. Drive the speed of the fan using Pulse-width modulation (PWM) depending on the transistor temperature
 6. And display Power Amplifier basic information using an OLED mini-screen
 
@@ -32,7 +32,7 @@ This is the complete block diagram of the amplifier I designed:
 
 ## First Tests and Control Board Prototype (V1.0)
 
-Based on the information published by Alex Pressl in [Easyeda](https://easyeda.com/pressl.alex/experiment_HL2_Arduino_I2C) and inspired by his work, I began to work on my first prototype of the Control Board to test the I2C connection from my HL2 to the initial "Control Board" listening to the I2C messages that HL2 uses to communicate from the main board to the internal LPF filter (N2ADR). 
+Based on the information published by Alex Pressl in [Easyeda](https://easyeda.com/pressl.alex/experiment_HL2_Arduino_I2C), and inspired by his work, I began to work on my first prototype of the Control Board to test the I2C connection from my HL2 to the initial "Control Board", listening to the I2C messages that HL2 uses to communicate from the main board to the internal LPF filter (N2ADR). 
 
 ![PA70 Control Board](https://github.com/ea3igt/HL2-PA70/blob/main/Images/First%20Prototype%20v1.0.2.jpg?raw=true)
 
@@ -50,7 +50,7 @@ And this is the first fully functional version of the Power Amplifier with the L
 
 ## PA70 First Finished Version (V3.0)
 
-Based on the experience accumulated during first prototype tests and the first usable Control Board, I designed my self PCB. This is the final schematic I implemented for the Control Board:
+Based on the experience accumulated during first prototype tests and the first usable Control Board, I designed my self PCB. This is the final schematic I implemented for the Control Board built around the Arduino Nano:
 
 ![PA70 Control Board Schematic v3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/Control%20Board%20Schematic%20v3.0.1.JPG?raw=true)
 
