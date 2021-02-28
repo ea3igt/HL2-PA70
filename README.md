@@ -63,3 +63,8 @@ And this is the final Power Amplifier complemented with the LPF and the Control 
 ![PA70 iNSIDE vIEW v3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v3.0.0.JPG?raw=true)
 
 ![PA70 Frontal View V2.1](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20Enclosure%20v2.1.0.jpg?raw=true)
+
+You can find in this repository:
+
+- The Arduino Nano code for the Control Board ([Software](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board))
+- The Contro Board KiCad files for PCB design and the Schematic ([PCB Board] https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board))
