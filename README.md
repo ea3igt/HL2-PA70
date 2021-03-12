@@ -67,8 +67,8 @@ And this is the final Power Amplifier complemented with the LPF and the Control 
 You can find in this repository:
 
 - The Arduino Nano code for the Control Board ([Software](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board))
-- The Control Board KiCad files for PCB design and the Schematic ([PCB Board v2.1](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board))
-- The Bill of Materials to implement the Control Board ([Control Board BOM v2.1](https://github.com/ea3igt/HL2-PA70/blob/main/PCB%20Board/Control%20Board%20v2.1%20BOM.xlsx))
+- The Control Board KiCad files for PCB design and the Schematic ([PCB Board](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board))
+- The Bill of Materials to implement the Control Board ([Control Board BOM](https://github.com/ea3igt/HL2-PA70/blob/main/PCB%20Board/Control%20Board%20v2.1%20BOM.xlsx))
 
 ### V3.0 Release Notes
 
