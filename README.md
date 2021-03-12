@@ -69,7 +69,7 @@ You can find in this repository:
 - The Arduino Nano code for the Control Board ([Software](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board))
 - The Control Board KiCad files for PCB design and the Schematic ([PCB Board](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board))
 
-### v3.0 Release Notes
+### V3.0 Release Notes
 
 Please, take into account the following notes if you want to implement this project:
 
