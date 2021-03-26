@@ -12,8 +12,8 @@ The amplifier is based on an "70W SSB Linear HF Power Amplifier" you can find on
 I did some modifications on the original board to adapt it to the new transistor and to my requirements:
 
 1. I changed the two included IRF640 Single Mosfets, for one MRF-9120 (Double RF Power Mosfet) that fits perfectly in the PCB and is more reliable because the heat transference is more convenient due to the form factor (the PCB accept both formats, the TO-220 package for the IRF640 ant the NI-860 package for the [MRF-9120](https://www.nxp.com/docs/en/data-sheet/MRF9120.pdf))
-2. I changed the R7 to a lower value (100 Ohm) to get the proper Bias level (~4.2 volt)
-3. I added the 15 Ohm R6 (see the schematic) for better input SWR adaptation (modification suggested by OE1CGS)
+2. I changed the R7 to a lower value (47 Ohm) to get the proper Bias level (~4.4 volt)
+3. I added the 20 Ohm R6 (see the schematic) for better input SWR adaptation (modification suggested by OE1CGS)
 
 This 70W SSB linear HF Power Amplifier needs a Low Pass Filter (LPF) to be compliant, removing the harmonics (there is an Input-Output connector in the PCB to use an external LPF) and I choose a very simple "HF low pass LPF 3.5M-30Mhz for Ham Radio CW FM" that fits perfectly with the power amplifier and does its job. This LPF has 4 bandpass filters for 80m, 40m, 20-17m and 15-10m, selectable connecting the specific pin to ground.
 
