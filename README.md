@@ -62,13 +62,13 @@ And this is the final Power Amplifier complemented with the LPF and the Control 
 
 ![PA70 iNSIDE vIEW v3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v3.0.0.JPG?raw=true)
 
-![PA70 Frontal View V2.1](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20Enclosure%20v2.1.0.jpg?raw=true)
+![PA70 Frontal View V3.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20Enclosure%20v2.1.0.jpg?raw=true)
 
 You can find it in this repository:
 
-- The Arduino Nano code for the Control Board ([Software](https://github.com/ea3igt/HL2-PA70/tree/main/Software))
-- The Control Board KiCad files for PCB design and the Schematic ([PCB Board](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board))
-- The Bill of Materials to implement the Control Board ([Control Board BOM](https://github.com/ea3igt/HL2-PA70/blob/main/PCB%20Board/Control%20Board%20v2.1%20BOM.xlsx))
+- The Arduino Nano code for the Control Board: [Software](https://github.com/ea3igt/HL2-PA70/tree/main/Software/Arduino)
+- The Control Board KiCad files for PCB design and the Schematic: [PCB Board](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board)
+- The Bill of Materials to implement the Control Board: [Control Board BOM](https://github.com/ea3igt/HL2-PA70/blob/main/PCB%20Board/Control%20Board%20v2.1%20BOM.xlsx)
 
 ### V3.0 Release Notes
 
@@ -77,6 +77,43 @@ Please, take into account the following notes if you want to implement this proj
 -	The Control Board program running on the Arduino is very basic and, for sure, it can be improved and optimized, especially how it handles the interrupts from the I2C bus or from the EXTTR signal coming from the HL2.
 -	The Control Board can be powered through the USB port or connecting to an external power supply (recommended). If this last option is used, supply 6+ Volts (6..7 volts recommended).
 -	The Control Board is designed and implemented to use an SSH1106 chip-based, 128x64 OLED Display (like this one: [OLED Display](https://www.amazon.com/HiLetgo-pulgadas-SSH1106-SSD1306-Display/dp/B01MRR4LVE/)), but, of course, it can be adapted to other displays.
+-	This Board works together with the HL2 and uses SCL2, SDA2, and EXTTR signals from the Rear IO Strip. See how I have connected all these signals to the DB9 in the HL2 to be connected to the DB9 in the Power Amplifier: ([HL2 to PA70 connection](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2%20to%20PA70%20connection%20v1.0.JPG))
+-	The Low Pass Filter (LPF) control mechanism is based on driving the specific band pin to ground to select the adequate filter. For my implementation I only need 4 pins to do the filter selection, but the Control Board is designed to select up to 8 filters. 
+-	Related to the Band selection, the HL2 selects up to 6 bands: 160m – 80m – 60/40m – 30/20m – 17/15m – 12/10m. You must map all these bands to your specific band selection in the decodeBand() function on the Arduino Sketch.
+-	I decided that all PTT control will be done by the Control Board because I wanted to add some protection capabilities in a future version (Max current, SWR limit, Temperature, etc.), so the EXTTR signal (PTT) coming from the HL2 does not go directly to the PTT pin on the Power Amplifier board, but it goes to my Control Board. If you want, for simplicity, you can connect the EXTTR or PTT signal coming from the HL2 directly to the Power Amplifier.
+-	Different control programs for HL2 have different behavior for Band Selection. I have only tested the Control Board software with SparkSDR, SDRConsole, and PowerSDR.
+-	I store the last selected Band on the Arduino’s EPROM to “remember” and select the last used band when the Control Board powers up.
+-	The Temperature sensor is simple, but it works perfectly. I use a regular NTC Thermistor, and I tested a couple of them with the same good results, so I understand that you are not going to have problems with it, perhaps only some adjustments.
+-	The temperature control implemented in the Control Board drives a Pulse Width Modulation fan to modify its speed depending on the temperature, so you will need a fan with this capability if you want to use this functionality.
+-	I have a “#define TEST” software switch in the Arduino Sketch to be used if you want to debug the program. You can get all the debugging information in the Serial Monitor. Remove or comment this sentence for production.
+
+## V4.0: PA70 with Touch Display
+
+Based on the previous version, I wanted to improve the PA70 interface capabilities, so I changed the simple 128x64 of the v3.0 for a 3.5" Nextion Touch Display [NX4832K035]:(https://itead.cc/product/nx4832k035-nextion-3-5-enhanced-series-hmi-touch-display/) to provide all interfacing capabilities I wanted. Using this Touch Display, together with the Arduino Board, I can control severl PA70 internal parameters:
+
+- Min, Warning and Max PA (MOSFET sensor) gauge temperature
+- Min Fan temperature activation
+- Max PA temperature for protection (PA bias will be disconnected)
+- Other parameters to be used in a near future (PWR, SWR, etc.)
+
+And this is the final Power Amplifier look with the new Nextion Touch Display installed:
+
+![PA70 Frontal View V4.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v4.0.0.JPG?raw=true)
+
+You can find all necessary material it in this repository:
+
+- The Arduino Nano code for the Control Board and to drive the communication with the Nextion display: [Arduino Software](https://github.com/ea3igt/HL2-PA70/tree/main/Software/Arduino)
+- The Nextion Display code to be used together with the Control Board: [Nextion Software](https://github.com/ea3igt/HL2-PA70/tree/main/Software/Nextion)
+- The Control Board KiCad files for PCB design and the Schematic (same as v3.0): [PCB Board](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board)
+- The Bill of Materials to implement the Control Board (same as v3.0):  [Control Board BOM](https://github.com/ea3igt/HL2-PA70/blob/main/PCB%20Board/Control%20Board%20v2.1%20BOM.xlsx)
+
+### V4.0 Release Notes
+
+Please, take into account the following notes if you want to implement this project:
+
+-	The Control Board program running on the Arduino is very basic and, for sure, it can be improved and optimized, especially how it handles the interrupts from the I2C bus or from the EXTTR signal coming from the HL2.
+-	The Control Board can be powered through the USB port or connecting to an external power supply (recommended). If this last option is used, supply 6+ Volts (6..7 volts recommended).
+-	The Control Board is designed and implemented to use a NX4832K035 Nextion Touch Display, but, of course, it can be adapted to other displays.
 -	This Board works together with the HL2 and uses SCL2, SDA2, and EXTTR signals from the Rear IO Strip. See how I have connected all these signals to the DB9 in the HL2 to be connected to the DB9 in the Power Amplifier: ([HL2 to PA70 connection](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2%20to%20PA70%20connection%20v1.0.JPG))
 -	The Low Pass Filter (LPF) control mechanism is based on driving the specific band pin to ground to select the adequate filter. For my implementation I only need 4 pins to do the filter selection, but the Control Board is designed to select up to 8 filters. 
 -	Related to the Band selection, the HL2 selects up to 6 bands: 160m – 80m – 60/40m – 30/20m – 17/15m – 12/10m. You must map all these bands to your specific band selection in the decodeBand() function on the Arduino Sketch.
