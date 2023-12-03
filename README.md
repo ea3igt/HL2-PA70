@@ -98,8 +98,7 @@ Based on the previous version, I wanted to improve the PA70 interface capabiliti
 
 And this is the final Power Amplifier look with the new Nextion Touch Display installed:
 
-![PA70 Frontal View V4.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v4.0.0.JPG?raw=true)
-![PA70 Frontal View v4.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v3.0.0.JPG?raw=true)
+![PA70 Frontal View v4.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v4.0.0.JPG?raw=true)
 
 You can find all necessary material it in this repository:
 
