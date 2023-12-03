@@ -89,7 +89,7 @@ Please, take into account the following notes if you want to implement this proj
 
 ## V4.0: PA70 with Touch Display
 
-Based on the previous version, I wanted to improve the PA70 interface capabilities, so I changed the simple 128x64 of the v3.0 for a 3.5" Nextion Touch Display [NX4832K035]:(https://itead.cc/product/nx4832k035-nextion-3-5-enhanced-series-hmi-touch-display/) to provide all interfacing capabilities I wanted. Using this Touch Display, together with the Arduino Board, I can control severl PA70 internal parameters:
+Based on the previous version, I wanted to improve the PA70 interface capabilities, so I changed the simple 128x64 of the v3.0 for a 3.5" Nextion Touch Display [NX4832K035](https://itead.cc/product/nx4832k035-nextion-3-5-enhanced-series-hmi-touch-display/) to provide all interfacing capabilities I wanted. Using this Touch Display, together with the Arduino Board, I can control severl PA70 internal parameters:
 
 - Min, Warning and Max PA (MOSFET sensor) gauge temperature
 - Min Fan temperature activation
