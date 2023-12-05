@@ -103,7 +103,7 @@ This is the final look of the Power Amplifier with the new Nextion Touch Display
 You can find all the necessary materials in this repository:
 
 - The Arduino Nano code for the Control Board and to drive the Nextion display: [Arduino Software](https://github.com/ea3igt/HL2-PA70/tree/main/Software/)
-- The Nextion Display code to be used together with the Control Board: [Nextion Software](https://github.com/ea3igt/HL2-PA70/tree/main/Software/)
+- The Nextion Display code to be used together with the Arduino Control Board: [Nextion Software](https://github.com/ea3igt/HL2-PA70/tree/main/Software/)
 - The Control Board KiCad files for PCB design and the Schematic (same as v3.0): [PCB Board](https://github.com/ea3igt/HL2-PA70/tree/main/PCB%20Board)
 - The Bill of Materials to implement the Control Board (same as v3.0):  [Control Board BOM](https://github.com/ea3igt/HL2-PA70/blob/main/PCB%20Board/Control%20Board%20v2.1%20BOM.xlsx)
 
