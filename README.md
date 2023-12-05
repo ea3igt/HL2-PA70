@@ -91,7 +91,7 @@ Please, take into account the following notes if you want to implement this proj
 
 Based on the previous version, I wanted to improve the PA70 interface capabilities. Therefore, I replaced the simple 128x64 display of v3.0 with a 3.5" Nextion Touch Display [NX4832K035](https://itead.cc/product/nx4832k035-nextion-3-5-enhanced-series-hmi-touch-display/) to provide all the interfacing capabilities I needed. Using this Touch Display, together with the Arduino Board, I can control several internal parameters of PA70, including:
 
-- Minimum, Warning, and Maximum PA gauge temperature on the MOSFET
+- Minimum, Warning, and Maximum PA temperature (sensed on the top of the MOSFET)
 - Minimum Fan temperature activation
 - Maximum PA temperature for protection (PA bias will be disconnected)
 - Other parameters to be used soon (PWR, SWR, etc.)
