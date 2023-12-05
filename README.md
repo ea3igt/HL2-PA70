@@ -96,7 +96,7 @@ Based on the previous version, I wanted to improve the PA70 interface capabiliti
 - Maximum PA temperature for protection (PA bias will be disconnected)
 - Other parameters to be used soon (PWR, SWR, etc.)
 
-This is the final look of the Power Amplifier with the new Nextion Touch Display installed.
+This is the final look of the Power Amplifier with the new Nextion Touch Display installed:
 
 ![PA70 Frontal View v4.0](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2-PA70%20v4.0.0.jpg?raw=true)
 
