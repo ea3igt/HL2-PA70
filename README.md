@@ -114,10 +114,10 @@ Please, take into account the following notes if you want to implement this proj
 -	The Control Board program running on the Arduino is very basic and, for sure, it can be improved and optimized, especially how it handles the interrupts from the I2C bus or the EXTTR signal coming from the HL2.
 -	The Control Board can be powered through the USB port or connected to an external power supply (recommended). If this last option is used, supply 6+ Volts (6..7 volts recommended).
 -	The NX4832K035 Nextion Touch Display is connected to the "OLED" 4-pin connector on the Control Board because it uses the same signals as the v3.0 display. Of course, it can be adapted to other displays.
-- Adapt the Nextion touch‑display software, please follow these steps:
-    · Locate the configuration file: Navigate to your Arduino libraries folder and find NexConfig.h (usually at C:\Users\<your‑user‑name>\Documents\Arduino\libraries\ITEADLIB_Arduino_Nextion‑master\NexConfig.h)
-    · Back up the original file: Make a copy of the existing NexConfig.h for safekeeping.
-    · Install the revised file: Replace the original NexConfig.h with the updated version provided in this repository.
+-	Adapt the Nextion touch‑display software, please follow these steps:<br>
+    1-	**Locate the configuration file**: Navigate to your Arduino libraries folder and find NexConfig.h (usually at C:\Users\<your‑user‑name>\Documents\Arduino\libraries\ITEADLIB_Arduino_Nextion‑master\NexConfig.h)<br>
+    2-	**Back up the original file**: Make a copy of the existing NexConfig.h for safekeeping.<br>
+    3-	**Install the revised file**: Replace the original NexConfig.h with the updated version provided in this repository.<br>
 -	This Board works together with the HL2 and uses SCL2, SDA2, and EXTTR signals from the Rear IO Strip. See how I have connected all these signals to the DB9 in the HL2 to be connected to the DB9 in the Power Amplifier: ([HL2 to PA70 connection](https://github.com/ea3igt/HL2-PA70/blob/main/Images/HL2%20to%20PA70%20connection%20v1.0.JPG))
 -	The Low Pass Filter (LPF) control mechanism is based on driving the specific band pin to ground to select the adequate filter. For my implementation, I only need 4 pins to do the filter selection, but the Control Board is designed to select up to 8 filters. 
 -	Related to the Band selection, the HL2 selects up to 6 bands: 160m – 80m – 60/40m – 30/20m – 17/15m – 12/10m. You must map all these bands to your specific band selection in the decodeBand() function on the Arduino Sketch.
